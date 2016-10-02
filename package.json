@@ -1,0 +1,43 @@
+{
+  "name": "ffmpeg-devices",
+  "version": "0.0.0",
+  "description": "Git a list of avialable audio and video devices from ffmpeg",
+  "license": "MIT",
+  "repository": "ericwooley/ffmpeg-devices",
+  "author": {
+    "name": "Eric Wooley",
+    "email": "ericwooley@gmail.com",
+    "url": "github.com/ericwooley"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "standard && nyc ava",
+    "test-watch": "standard && ava test.js --watch"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "shelljs": "^0.7.4"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "coveralls": "^2.11.12",
+    "nyc": "^7.1.0",
+    "standard": "^8.3.0"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
